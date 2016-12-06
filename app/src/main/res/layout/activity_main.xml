@@ -11,17 +11,24 @@
     tools:context="com.chon.runtimepermissiondemo.OriginalActivity">
 
     <Button
+        android:id="@+id/btn_call_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拨打123456" />
+
+    <Button
         android:id="@+id/btn_camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="相机" />
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/btn_camera"
+        android:text="打开相机"
+        android:layout_below="@+id/btn_call_phone"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </RelativeLayout>
